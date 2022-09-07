@@ -1,0 +1,51 @@
+# l2 <- list(c(1,"h",FALSE))
+# print(l2)
+# class(l2)
+# class(l2[[1]])
+
+# A list containing a list and a vector 
+# l2 <- list(c(1,"s",TRUE),list(1,TRUE,100L))
+# print(l2)
+
+
+# l3 <- list(c(1,"h",TRUE),matrix( c(1,TRUE,3,"hs"),2,2),list(1,TRUE,100L))
+# print(l3)
+
+# print(l3[1])
+# print(l3[2])
+# print(l3[3])
+# class(l3[[2]])
+
+
+# data frame is used to import other types of file(cpp/java) into the R.
+df = data.frame()
+df = data.frame(name= c("Harshita","Dk"),age = c(20,20),gender = c("FEMALE","FEMALE"))
+print(df)
+
+print(df[2,3])
+print(df[2,"gender"])
+# entire first row 
+print(df[1,])
+# entire third col
+print(df[3])
+# entire third col using[[]] ans will be in vector 
+print(df[[3]])
+ 
+# add a col
+h <- c(124,21)
+df$height= h
+print(df)
+
+h1 <- c(124,21)
+df[["height1"]] = h1
+print(df)
+
+# h2<-c(124,21)
+cbine(df,h2)
+print(df)
+
+# how to add a row using dataframe 
+vec <- c(1,2,3)
+rbine (df,h3)
+
+print(df)
